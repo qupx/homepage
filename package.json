@@ -1,0 +1,19 @@
+{
+	"name": "@xdnmb/homepage",
+	"module": "src/index.ts",
+	"type": "module",
+	"scripts": {
+		"dev": "bunx --bun vite",
+		"start": "bun --watch run ./src/index.ts dev",
+		"build": "bunx --bun vite build",
+		"preview": "bunx --bun vite preview",
+		"deploy": "bunx wrangler pages deploy dist"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"vite": "^5.4.8"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
+}
